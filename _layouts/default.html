@@ -10,23 +10,23 @@
     - Yong Yuan
     {% endif %}
   </title>
-  <link rel="stylesheet" href="../css/site.css">
+  <link rel="stylesheet" href="../notes/css/site.css">
   <link href="//cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
-  <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link href="/notes/favicon.ico" rel="shortcut icon" type="image/x-icon" />
   {% if page.description %}<meta name="description" content="{{page.description}}" />{% endif %}
   <link href="/blog/feed.xml" type="application/rss+xml" rel="alternate" title="Latest 10 blog posts (atom)" />
 
   {% if page.url == '/index.html' %}
-    <link rel="alternate" hreflang="en" href="/" />
+    <link rel="alternate" hreflang="en" href="/notes" />
   {% elsif page.url == '/cn/index.html' %}
-    <link rel="alternate" hreflang="cn" href="/cn/" />
+    <link rel="alternate" hreflang="cn" href="/notes/cn/" />
   {% endif %}
 
   {{ page.extra_head }}
 
   {% if page.category == 'blog' %}
     {% if page.photo %}
-      <meta property="og:image" content="/images/posts/{{ page.photo }}" />
+      <meta property="og:image" content="/notes/images/posts/{{ page.photo }}" />
     {% endif %}
   {% endif %}
 </head>
@@ -36,32 +36,32 @@
     <header class="inner">
       {% if page.url == '/cn/' %}
       <nav>
-        <a class="{% if page.category == 'about-zh' %} selected {% endif %}" href="/cn/">关于</a>
-        <a class="{% if page.category == 'project-zh' %} selected {% endif %}" href="/cn/project">项目</a>
-        <a href="/YongYuan_resume.pdf">简历</a>
-        <a class="{% if page.category == 'blog' %} selected {% endif %}" href="/blog/">博客</a>
-        <a href="/books/">书单</a>
-		    <a href="/timeline/">时间线</a>
+        <a class="{% if page.category == 'about-zh' %} selected {% endif %}" href="/notes/cn/">关于</a>
+        <a class="{% if page.category == 'project-zh' %} selected {% endif %}" href="/notes/cn/project">项目</a>
+        <a href="/notes/YongYuan_resume.pdf">简历</a>
+        <a class="{% if page.category == 'blog' %} selected {% endif %}" href="/notes/blog/">博客</a>
+        <a href="/notes/books/">书单</a>
+		    <a href="/notes/timeline/">时间线</a>
         <a href="https://github.com/devin-jade">Github</a>
       </nav>
       {% elsif page.url == '/cn/project' %}
       <nav>
-        <a class="{% if page.category == 'about-zh' %} selected {% endif %}" href="/cn/">关于</a>
-        <a class="{% if page.category == 'project-zh' %} selected {% endif %}" href="/cn/project">项目</a>
-	      <a href="/YongYuan_resume.pdf">简历</a>
-        <a class="{% if page.category == 'blog' %} selected {% endif %}" href="/blog/">博客</a>
-	      <a href="/books/">书单</a>
-		    <a href="/timeline/">时间线</a>
+        <a class="{% if page.category == 'about-zh' %} selected {% endif %}" href="/notes/cn/">关于</a>
+        <a class="{% if page.category == 'project-zh' %} selected {% endif %}" href="/notes/cn/project">项目</a>
+	      <a href="/notes/YongYuan_resume.pdf">简历</a>
+        <a class="{% if page.category == 'blog' %} selected {% endif %}" href="/notes/blog/">博客</a>
+	      <a href="/notes/books/">书单</a>
+		    <a href="/notes/timeline/">时间线</a>
         <a href="https://github.com/devin-jade">GitHub</a>
       </nav>
       {% else %}
       <nav>
-        <a class="{% if page.category == 'about' %} selected {% endif %}" href="/">About</a>
-        <a class="{% if page.category == 'project' %} selected {% endif %}" href="/project/">Project</a>
-	      <a href="/YongYuan_resume.pdf">Resume</a>
-        <a class="{% if page.category == 'blog' %} selected {% endif %}" href="/blog/">Blog</a>
-	      <a href="/books/">Book</a>
-		    <a href="/timeline/">Times</a>
+        <a class="{% if page.category == 'about' %} selected {% endif %}" href="/notes/">About</a>
+        <a class="{% if page.category == 'project' %} selected {% endif %}" href="/notes/project/">Project</a>
+	      <a href="/notes/YongYuan_resume.pdf">Resume</a>
+        <a class="{% if page.category == 'blog' %} selected {% endif %}" href="/notes/blog/">Blog</a>
+	      <a href="/notes/books/">Book</a>
+		    <a href="/notes/timeline/">Times</a>
         <a href="https://github.com/devin-jade">GitHub</a>
       </nav>
 	  {% endif %}
@@ -79,7 +79,7 @@
   <footer>
     <div  style="border-bottom: 1px solid #eee"></div>
     <p class="linkings">
-    Friend: <a href="https://sites.google.com/site/raphaelitemou/">Lichao</a>&nbsp&nbsp&nbsp&nbsp<a href="http://cmp.felk.cvut.cz/~toliageo/publi.html">Tolias</a>&nbsp&nbsp&nbsp&nbsp<a href="http://www.heyuhang.com/">heyuhang</a>&nbsp&nbsp&nbsp&nbsp<a href="https://blog.yuanbin.me/">yuanbin</a>&nbsp&nbsp&nbsp&nbsp<a href="http://freemind.pluskid.org/">pluskid</a>&nbsp&nbsp&nbsp&nbsp<a href="https://yihui.name/">yihui</a>
+    <!-- Friend: <a href="https://sites.google.com/site/raphaelitemou/">Lichao</a>&nbsp&nbsp&nbsp&nbsp<a href="http://cmp.felk.cvut.cz/~toliageo/publi.html">Tolias</a>&nbsp&nbsp&nbsp&nbsp<a href="http://www.heyuhang.com/">heyuhang</a>&nbsp&nbsp&nbsp&nbsp<a href="https://blog.yuanbin.me/">yuanbin</a>&nbsp&nbsp&nbsp&nbsp<a href="http://freemind.pluskid.org/">pluskid</a>&nbsp&nbsp&nbsp&nbsp<a href="https://yihui.name/">yihui</a> -->
     </p>
     <p>
       Made with <a href="http://jekyllrb.com/">Jekyll</a>,
