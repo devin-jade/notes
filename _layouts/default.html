@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{% if page.language == nil %}cn{% else %}{{ page.language }}{% endif %}">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,21 +14,22 @@
   <link rel="stylesheet" href="../css/site.css">
   <link href="//cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
   <link href="../favicon.ico" rel="shortcut icon" type="image/x-icon" />
-  {% if page.description %}<meta name="description" content="{{page.description}}" />{% endif %}
+  {% if page.description %}
+  <meta name="description" content="{{page.description}}" />{% endif %}
   <link href="/blog/feed.xml" type="application/rss+xml" rel="alternate" title="Latest 10 blog posts (atom)" />
 
   {% if page.url == '/index.html' %}
-    <link rel="alternate" hreflang="cn" href="/notes" />
+  <link rel="alternate" hreflang="cn" href="/notes" />
   {% elsif page.url == '/cn/index.html' %}
-    <link rel="alternate" hreflang="cn" href="/notes/cn/" />
+  <link rel="alternate" hreflang="cn" href="/notes/cn/" />
   {% endif %}
 
   {{ page.extra_head }}
 
   {% if page.category == 'blog' %}
-    {% if page.photo %}
-      <meta property="og:image" content="/images/posts/{{ page.photo }}" />
-    {% endif %}
+  {% if page.photo %}
+  <meta property="og:image" content="/images/posts/{{ page.photo }}" />
+  {% endif %}
   {% endif %}
 </head>
 
@@ -41,23 +43,24 @@
         <a href="/notes/YongYuan_resume.pdf">简历</a>
         <a class="{% if page.category == 'blog' %} selected {% endif %}" href="/notes/blog/">博客</a>
         <a href="/notes/books/">书单</a>
-		    <a href="/notes/timeline/">时间线</a>
+        <a href="/notes/timeline/">时间线</a>
         <a href="https://github.com/devin-jade">Github</a>
       </nav>
       {% else %}
       <nav>
         <a class="{% if page.category == 'about-zh' %} selected {% endif %}" href="/notes/cn/">关于</a>
         <a class="{% if page.category == 'project-zh' %} selected {% endif %}" href="/notes/cn/project">项目</a>
-	      <a href="/notes/YongYuan_resume.pdf">简历</a>
+        <a href="/notes/YongYuan_resume.pdf">简历</a>
         <a class="{% if page.category == 'blog' %} selected {% endif %}" href="/notes/blog/">博客</a>
-	      <a href="/notes/books/">书单</a>
-		    <a href="/notes/timeline/">时间线</a>
+        <a href="/notes/books/">书单</a>
+        <a href="/notes/timeline/">时间线</a>
         <a href="https://github.com/devin-jade">GitHub</a>
       </nav>
-	  {% endif %}
+      {% endif %}
 
       <div class="pull-right right logo">
-        <a href="https://devin-jade.github.io/notes/"><img class="avatar" src="https://devin-jade.github.io/notes/imgs/kobe.png" alt="Profile photo" /></a>
+        <a href="https://devin-jade.github.io/notes/"><img class="avatar"
+            src="https://devin-jade.github.io/notes/imgs/kobe.png" alt="Profile photo" /></a>
       </div>
       <div class="clear"></div>
     </header>
@@ -67,20 +70,39 @@
   {{ content }}
 
   <footer>
-    <div  style="border-bottom: 1px solid #eee"></div>
+    <div style="border-bottom: 1px solid #eee"></div>
     <p class="linkings">
-    <!-- Friend: <a href="https://sites.google.com/site/raphaelitemou/">Lichao</a>&nbsp&nbsp&nbsp&nbsp<a href="http://cmp.felk.cvut.cz/~toliageo/publi.html">Tolias</a>&nbsp&nbsp&nbsp&nbsp<a href="http://www.heyuhang.com/">heyuhang</a>&nbsp&nbsp&nbsp&nbsp<a href="https://blog.yuanbin.me/">yuanbin</a>&nbsp&nbsp&nbsp&nbsp<a href="http://freemind.pluskid.org/">pluskid</a>&nbsp&nbsp&nbsp&nbsp<a href="https://yihui.name/">yihui</a> -->
+      <!-- Friend: <a href="https://sites.google.com/site/raphaelitemou/">Lichao</a>&nbsp&nbsp&nbsp&nbsp<a href="http://cmp.felk.cvut.cz/~toliageo/publi.html">Tolias</a>&nbsp&nbsp&nbsp&nbsp<a href="http://www.heyuhang.com/">heyuhang</a>&nbsp&nbsp&nbsp&nbsp<a href="https://blog.yuanbin.me/">yuanbin</a>&nbsp&nbsp&nbsp&nbsp<a href="http://freemind.pluskid.org/">pluskid</a>&nbsp&nbsp&nbsp&nbsp<a href="https://yihui.name/">yihui</a> -->
     </p>
     <p>
       Made with <a href="http://jekyllrb.com/">Jekyll</a>,
-      hosted on <a href="https://github.com/devin-jade/notes">Github Pages</a>. Inspired by <a href="http://sebastien.saunier.me/">saunier</a>, designed by <a href="https://github.com/devin-jade/notes">Willard</a>.
+      hosted on <a href="https://github.com/devin-jade/notes">Github Pages</a>. Inspired by <a
+        href="http://sebastien.saunier.me/">saunier</a>, designed by <a
+        href="https://github.com/devin-jade/notes">Willard</a>.
     </p>
     <p>
-      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Attribution-NonCommercial-ShareAlike 4.0 International</a> 2013-2019
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Attribution-NonCommercial-ShareAlike 4.0
+        International</a> 2013-2019
     </p>
   </footer>
 
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script language="javascript">
+    var link = "";
+    // 遍历所有的 img 标签
+    $("img").each((i, o) => {
+      var o = $(o);
+      // 判断图片的链接是否包含 sinaimg 关键字
+      if (o.attr("src").indexOf("sinaimg") > 0) {
+        // 给这个标签加上 referrerPlicy 属性
+        o.attr("referrerpolicy", "no-referrer");
+        // 备份图片的 src
+        link = o.attr("src");
+        // 重新设置 src，让页面重新加载一次图片
+        o.attr("src", link);
+      }
+    });
+  </script>
 </body>
+
 </html>
