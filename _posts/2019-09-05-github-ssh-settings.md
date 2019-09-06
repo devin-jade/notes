@@ -54,11 +54,11 @@ ssh-keygen -t rsa -C "github 注册邮箱"
 
 点击 New SSH key按钮
 
-![1567609278179](C:\Users\hp-430G5\AppData\Roaming\Typora\typora-user-images\1567609278179.png)
+![](https://ws1.sinaimg.cn/large/9cd40bd3gy1g6pqwsobyjj20ug09cq3m.jpg)
 
 title 起个名字，key就是前面复制的id_rsa.pub 的内容，点击Add SSH key 保存即可
 
-![1567609573828](C:\Users\hp-430G5\AppData\Roaming\Typora\typora-user-images\1567609573828.png)
+![](https://ws1.sinaimg.cn/large/9cd40bd3gy1g6pqwxfl91j20x10czq3g.jpg)
 
 ### 第四步：验证github
 
@@ -68,7 +68,7 @@ ssh -T git@github.com
 
 回车，输入yes 然后出现最后的红框，代表配成功和完成。
 
-![1567609474271](C:\Users\hp-430G5\AppData\Roaming\Typora\typora-user-images\1567609474271.png)
+![](https://ws1.sinaimg.cn/large/9cd40bd3gy1g6pqwytqxfj20pt06374p.jpg)
 
 ## Tips 
 
