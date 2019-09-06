@@ -1,49 +1,45 @@
 ---
 layout: default
-category: about
-title: Devin's homepage
-description: I am Devin.
+category: about-zh
+language: cn
+title: Devin的个人主页
+description: 这是Devin的个人主页。
 ---
 
 <section class="about-me inner">
-  <h1>
+  <!-- <h1>
     <div class="book-me">
-      <a class="btn btn-lg" href="/notes/cn/">Chinese</a>
+      <a class="btn btn-lg" href="/notes/">英文</a>
     </div>
-    <span class="hello">
-      <em>Keep</em>
-      <small>on fighting.
-    </span>
-  </h1>
+    <span class="hello">沉淀思想，知行合一</span>
+  </h1> -->
 
   <blockquote>
   <p>
-    There is something inside, that they can't get to, that they can't touch. That's yours.
+    极致的幸福，存在于孤独的深海。在这样日复一日的生活里，我逐渐和自己达成和解。
   </p>
   </blockquote>
-
+  
   <p>
-    I am <a href="/notes/"><span itemprop="name">Devin</span></a>, an new <strong>java develop Engineer.</strong>
+    这是<a href="/notes"><span itemprop="name">Devin</span></a>的个人主页，java开发工程师。
   </p>
-
+ 
 </section>
 
 <section class="inner">
-  <div class="post-recents-in-index">
-    <strong>Recent blog posts</strong>
-  </div>
-  <blockquote>
-    <ul>
-      {% for post in site.posts limit:3 %}
-      <li class="post-list-in-index">
-      <small class="post-list-date-in-index">{{ post.date | date_to_string }}</small><a  href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-      </li>
-      {% endfor %}
-    </ul>
-  </blockquote>
+<div class="post-recents-in-index">
+<strong>最近写作</strong>
+</div>
+<blockquote>
+<ul>
+    {% for post in site.posts limit:3 %}
+    <li class="post-list-in-index">
+    <small class="post-list-date-in-index">{{ post.date | date_to_string }}</small><a  href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+</ul>
+</blockquote>
   <p>
-    If you are interested in me, you can access to my English <a href="{{ site.url }}/notes/YongYuan_resume.pdf"><strong>resume</strong></a> for more details.
+    更多请查看我的<a href="{{ site.url }}/YongYuan_resume.pdf"><strong>简历</strong></a>。
   </p>
 </section>
-
-<!--<a href="https://github.com/willard-yuan/willard-yuan.github.io"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>-->
