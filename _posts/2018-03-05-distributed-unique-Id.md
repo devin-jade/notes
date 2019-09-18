@@ -1,8 +1,8 @@
 ---
-layout:post
-title:分布式ID生成器
-categories:[Distributed]
-tags:unique Id
+layout: post
+title: 分布式ID生成器
+categories: [Distributed]
+tags: unique Id
 ---
 
 # 分布式集群下如何做到唯一序列号
