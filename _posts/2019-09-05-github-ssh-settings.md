@@ -3,7 +3,6 @@ layout: post
 title: github ssh 配置
 categories: [开发工具]
 tags: Git
-
 ---
 
 > Git 可以使用四种主要的协议来传输数据：本地传输，SSH 协议，Git 协议和 HTTP 协议[1]。其中，本地协议由于目前大都是进行远程开发和共享代码所以一般不常用，而git协议由于缺乏授权机制且较难架设所以也不常用。
