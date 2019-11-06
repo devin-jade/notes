@@ -5,8 +5,6 @@ categories: [Mysql]
 tags: Mysql 基础知识
 ---
 
-# Java protected
-
 # Mysql count
 
 mysql中count一般使用四种 count(*)、count(1)、count(主键ID) ， count(列名)，本文记录四种区别；

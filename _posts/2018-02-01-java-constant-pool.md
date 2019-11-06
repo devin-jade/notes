@@ -1,3 +1,11 @@
+---
+layout: post
+title: Java 常量池
+categories: [Java]
+tags: constant pool
+
+---
+
 # Java 常量池
 
 java 常量池是线程共享的，一般包含字面量和符号引用。
