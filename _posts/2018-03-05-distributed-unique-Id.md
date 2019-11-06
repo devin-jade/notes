@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 分布式ID生成器
-categories: [Distributed]
+categories: [Tool component]
 tags: unique Id
 ---
 

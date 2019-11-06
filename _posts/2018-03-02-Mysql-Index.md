@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Mysql Index
-categories: [Mysql index]
-tags: Mysql 基础知识
+categories: [Mysql Base]
+tags: index
 ---
 
 # Mysql Index

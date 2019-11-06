@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Java protected
-categories: [Java]
-tags: java 基础知识
+categories: [Java Base]
+tags: protected
 ---
 
 # Java protected

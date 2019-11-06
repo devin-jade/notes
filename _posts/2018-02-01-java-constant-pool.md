@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Java 常量池
-categories: [Java]
+categories: [Java Base]
 tags: constant pool
 
 ---

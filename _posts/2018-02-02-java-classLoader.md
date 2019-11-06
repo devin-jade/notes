@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Java String
-categories: [classLoader]
-tags: java 基础知识
+categories: [Java Base]
+tags: classLoader
 ---
 
 # Java ClassLoader

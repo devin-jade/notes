@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Java日志工具库
-categories: [Java]
-tags: log
+title: Java 日志工具库
+categories: [Java Base]
+tags: log,log4j,logback,log4j2
 ---
 
 # Java 日志工具库

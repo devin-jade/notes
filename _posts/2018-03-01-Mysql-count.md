@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Mysql count
-categories: [Mysql]
-tags: Mysql 基础知识
+categories: [Mysql Base]
+tags: mysql count
 ---
 
 # Mysql count

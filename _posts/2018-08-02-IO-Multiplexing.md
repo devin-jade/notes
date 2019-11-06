@@ -1,8 +1,8 @@
 ---
 layout: post
 title: IO 初识
-categories: [Redis]
-tags: I/O
+categories: [IO]
+tags: IO multiplexing
 ---
 
 ## 概述
